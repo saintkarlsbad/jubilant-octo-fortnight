@@ -1,0 +1,95 @@
+.nav {
+  width: 100%;
+  height: 55px;
+  background-color: rebeccapurple;
+  border: solid;
+}
+
+.square {
+  height: 100px;
+  width: 100px;
+  background-color: goldenrod;
+}
+
+/* break-point! */
+/* remember that order matters  */
+
+
+
+
+.chameleon {
+  width: 50px;
+  height: 50px;
+  background-color: saddlebrown;
+  transition: 2s;
+}
+
+.animation1 {
+  width:200px;
+  height: 300px;
+  transform: rotate(1080deg)
+}
+
+.spin {
+  width: 100px;
+  height: 100px;
+  background-color: olivedrab;
+  animation-name: spin;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes spin {
+  /* from {
+    transform: rotate(0deg)
+  }
+  to {
+    transform: rotate(1080deg)
+  } */
+  0% {
+    transform: rotate(0deg)
+  }
+  42% {
+    width: 200px;
+  }
+  64% {
+    transform: scale(2);
+  
+  }
+  87% {
+    transform: perspective(10)
+  }
+  100% {
+    transform: rotate(1080deg)
+  }
+}
+
+@media(min-width: 500px) {
+  .nav {
+    background-color: mistyrose;
+    border: dashed;
+  }
+  .square {
+    width: 200px;
+    background-color: aquamarine;
+    border: solid;
+    border-style: groove;
+  }
+}
+
+@media (min-width: 400px) and (max-width: 800px){
+  .chameleon {background-color: tomato;
+    border-radius: 50%;
+  }
+}
+
+@media (min-width: 800px) {
+  .nav {
+    background-color: rgb(235, 59, 147)
+  }
+}
+
+
+
+
